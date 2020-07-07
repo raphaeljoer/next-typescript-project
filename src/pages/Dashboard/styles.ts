@@ -8,6 +8,10 @@ export const Container = styled.div`
   display: flex;
   flex: 1;
   background: url(${bgImg}) no-repeat 45vw bottom;
+
+  @media (max-width: 900px) {
+    background: url(${bgImg}) no-repeat 80vw bottom;
+  }
 `;
 
 export const Content = styled.div`
@@ -56,6 +60,7 @@ export const Header = styled.div`
   }
 
   @media (max-width: 900px) {
+    justify-content: center;
     a#sala-online {
       display: none;
     }
@@ -67,6 +72,7 @@ export const Main = styled.div`
   flex-grow: 1;
   flex-direction: column;
   justify-content: center;
+  padding: 0 20px;
 
   margin-top: -100px;
   max-width: 560px;
@@ -131,5 +137,69 @@ export const Main = styled.div`
     color: white;
     font-size: 18px;
     font-weight: 700;
+  }
+
+  @media (max-width: 900px) {
+    max-width: 80%;
+    margin: 0 auto;
+
+    h1 {
+      margin-top: 36px;
+      font-size: 36px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    a {
+      margin: 0 auto;
+      margin-top: 36px;
+      margin-bottom: 36px;
+      justify-content: center;
+    }
+  }
+`;
+
+export const SalaOnlineMobile = styled.div`
+  display: none;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 48px;
+
+  a {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+
+    color: #322153;
+    font-weight: 700;
+    text-decoration: none;
+
+    width: 100%;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 16px;
+    margin-bottom: 32px;
+    width: 60%;
+    height: 50px;
+
+    color: #fff;
+    background: #2fb86e;
+
+    border-radius: 5px;
+  }
+
+  @media (max-width: 900px) {
+    display: flex;
   }
 `;
