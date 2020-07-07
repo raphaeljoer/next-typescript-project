@@ -10,13 +10,13 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #312E38;
-    color: #fff;
+    background: #f0f0f5;
+    color: #322153;
     -webkit-font-smoothing: antialiased;
   }
 
   body, input , button {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
     font-size:16px;
   }
 
@@ -28,6 +28,10 @@ export default createGlobalStyle`
     cursor: pointer;
     border: none;
     outline: 0;
+  }
+
+  a {
+    text-decoration: none;
   }
 
 `;
