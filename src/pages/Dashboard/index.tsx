@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import logoImg from '../../assets/logo@1x.svg';
 import { Container, Header, Main, Content, SalaOnlineMobile } from './styles';
@@ -23,7 +23,7 @@ const Dashboard: React.FC = () => {
             Ajudamos a melhorar a qualidade de vida de pessoas com deficiências
             (PCD).
           </p>
-          <Link to="/Content">
+          <Link to="/content">
             <span />
             <strong>Acessar conteúdos</strong>
           </Link>
